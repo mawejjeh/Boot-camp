@@ -1,0 +1,21 @@
+author: "Mawejje Harbert"
+date: '2022-09-13'
+output: html_document
+
+<p>This is an R HTML document. When you click the <b>Knit HTML</b> button a web page will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
+
+<fetching InsectSprays data>
+print(InsectSprays)
+-->
+<!-- begin.rcode Displaying the frist lines of InsectSprayshead
+print (InsectSprays)
+end.rcode-->
+
+<!--begin.rcode oneway.test 
+oneway.test(count~spray, data = InsectSprays)
+end.rcode-->
+
+<!--begin.rcode ploting a box plot 
+plot(count~spray, data = InsectSprays, main = ("Variation of treatment means "))
+end.rcode-->
+
